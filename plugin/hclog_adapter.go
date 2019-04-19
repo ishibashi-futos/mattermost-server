@@ -63,23 +63,23 @@ func (h *hclogAdapter) Error(msg string, args ...interface{}) {
 	}
 }
 
-func (h *hclogAdapter) IsTrace() bool {
+func (_ *hclogAdapter) IsTrace() bool {
 	return false
 }
 
-func (h *hclogAdapter) IsDebug() bool {
+func (_ *hclogAdapter) IsDebug() bool {
 	return true
 }
 
-func (h *hclogAdapter) IsInfo() bool {
+func (_ *hclogAdapter) IsInfo() bool {
 	return true
 }
 
-func (h *hclogAdapter) IsWarn() bool {
+func (_ *hclogAdapter) IsWarn() bool {
 	return true
 }
 
-func (h *hclogAdapter) IsError() bool {
+func (_ *hclogAdapter) IsError() bool {
 	return true
 }
 
